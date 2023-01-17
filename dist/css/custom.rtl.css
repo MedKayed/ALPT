@@ -1,0 +1,76 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/droid.arabic.kufi.ttf);
+  unicode-range: 0600–06FF;
+}
+body{direction:rtl;font-family:myFirstFont, Arial;}
+.layout-fixed .main-sidebar{right:0px;}
+body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header{
+	right:0px;
+}
+.nav {padding-right:0px;}
+.main-sidebar{
+	background-color:#0056b3;
+}
+.brand-text{
+    text-align: right;
+    display: block;}
+[class*=sidebar-dark] .brand-link{border-bottom: 1px solid rgba(255,255,255,0.5);}
+[class*=sidebar-dark] .user-panel{border-bottom:1px solid rgba(255,255,255,0.1);}
+.brand-link .brand-image{float: right;}
+.content-header h1{text-align: right !important;}
+[class*=sidebar-dark] .btn-sidebar, [class*=sidebar-dark] .form-control-sidebar, [class*=sidebar-dark] .form-control-sidebar:focus{
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0;
+    color: #999;
+}
+
+
+.card-header>.card-tools{float:left;}
+.card-title{float: right;}
+.nav-sidebar .nav-link>.right, .nav-sidebar .nav-link>p>.right{right:unset;left:1rem;}
+.content-header .breadcrumb{direction:ltr;}
+
+/*custom rh-info card*/
+.rh_info_card{cursor:pointer;}
+.rh_info_card:hover > .card-header{background-color: #007bff;color:#fff !important;transition: all 300ms;}
+.rh_info_card .card-header{background-color: #eee;transition: all 300ms;}
+.label_darkgray{color:#444;}
+
+/*trainer-card*/
+.trainer-card img{width: 160px !important;}
+
+/*===================*/
+@media (min-width: 576px)
+{
+	.float-sm-right{
+		float: left!important;
+	}
+}
+@media (min-width: 768px){
+	ul li{text-align: right}
+	body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header{
+		margin-left: unset;transition:margin-right .3s ease-in-out;margin-right:250px;
+	}
+	.ml-auto, .mx-auto {    margin-right: auto!important;margin-left:unset !important;}
+
+
+}
+@media (min-width: 992px){
+	.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header{
+		margin-left: unset !important;
+		margin-right: 4.6rem !important;
+	}
+
+}
+
+
+/*===================Login page======================*/
+
+
+
+
+/*===================================================*/
+
+
