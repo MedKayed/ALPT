@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Dashboard</title>
+  <title>الإدارة الوطنية للمطالعة العمومية </title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet"
@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Tempusdominus Bootstrap 4 -->
   <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!--Sweetalert-->
+  <link rel="stylesheet" href="../plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
@@ -186,7 +188,7 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="index3.html" class="brand-link">
+      <a href="bp_home.html" class="brand-link">
         <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">البرمجية</span>
@@ -196,13 +198,13 @@
       <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <a href="#" class="d-block">محمد عمّار</a>
-          </div>
+        <div class="image">
+          <img src="../dist/img/user8-128x128.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
+        <div class="info">
+          <a href="#" class="d-block">محمد عمّار</a>
+        </div>
+      </div>
 
         <!-- SidebarSearch Form -->
         <div class="form-inline">
@@ -216,32 +218,62 @@
           </div>
         </div>
 
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link active">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>
-                  إدارة المكتبة
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>المعلومات العامة </p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-          </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                 إدارة المكتبة
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_infos.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>المعلومات العامة </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="bp_statistiques.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>الإحصائيات و البيانات </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="bp_rh_list.html" class="nav-link active">
+              <i class="far fa-circle nav-icon"></i>
+              <p>الموراد البشرية </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>المقابيض السنوية </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>خدمات المكتبة </p>
+            </a>
+          </li>  
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>إدارة الأنشطة </p>
+            </a>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
     </aside>
@@ -267,9 +299,7 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <section class="content" style="
-      display: ;
-  ">
+      <section class="content">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-3">
@@ -298,7 +328,7 @@
                     </li>
                   </ul>
 
-                  <a href="#" class="btn btn-primary btn-block"><i class="fas fa-comments"></i> <b>Contacter</b></a>
+                  <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#CtcModal" data-whatever="@سليم حمادي" data-whatevertilte="رسالة جديدة"><i class="fas fa-comments"></i> <b>Contacter</b></a>
                 </div>
                 <!-- /.card-body -->
               </div>
@@ -672,6 +702,36 @@
     <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
+    <!--CtcModal-->
+    <div class="modal fade text-right" id="CtcModal" tabindex="-1" role="dialog" aria-labelledby="CtcModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-left">
+            <h5 class="modal-title ml-1" id="CtcModalLabel">رسالة</h5>
+            <button type="button" class="close ml-1" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="name" class="float-right col-3 text-right label_darkgray">الموضوع</label>
+                <input type="text" name="" id="" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">الرسالة:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق</button>
+            <button type="button" class="btn btn-primary swalDefaultSuccess">إرسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--./CtcModal-->
 
   <!-- jQuery -->
   <script src="../plugins/jquery/jquery.min.js"></script>
@@ -683,6 +743,8 @@
   </script>
   <!-- Bootstrap 4 -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--Sweetalert-->
+  <script src="../plugins/sweetalert2/sweetalert2.min.js"></script>
   <!-- ChartJS -->
   <script src="../plugins/chart.js/Chart.min.js"></script>
   <!-- Sparkline -->
@@ -707,6 +769,33 @@
   <!--<script src="../dist/js/demo.js"></script>-->
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="../dist/js/pages/dashboard.js"></script>
+<!--Contact Modal -->
+<script>
+  $('#CtcModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  var whateverTilte = button.data('whatevertilte') // Extract info from data-* attributes
+
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text(whateverTilte+'' + recipient)
+  //modal.find('.modal-body input').val(recipient)
+});
+
+/**/
+$('.swalDefaultSuccess').click(function() {
+  Swal.fire(
+'أحسنت',
+' لقد تم إرسال رسالتك بنجاح',
+'success')
+// $(".modal-backdrop").hide()
+  $("#CtcModal").modal("hide")
+  });
+  
+
+/**/
+  </script>
 </body>
 
 </html>
