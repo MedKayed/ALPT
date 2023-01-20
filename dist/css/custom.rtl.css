@@ -18,6 +18,11 @@ body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-w
 [class*=sidebar-dark] .brand-link{border-bottom: 1px solid rgba(255,255,255,0.5);}
 [class*=sidebar-dark] .user-panel{border-bottom:1px solid rgba(255,255,255,0.1);}
 .brand-link .brand-image{float: right;}
+ul.nav.nav-treeview{background: rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: rgb(0 0 0 / 40%) 0px 1px;
+    
+    border-top: none !important;}
 .content-header h1{text-align: right !important;}
 [class*=sidebar-dark] .btn-sidebar, [class*=sidebar-dark] .form-control-sidebar, [class*=sidebar-dark] .form-control-sidebar:focus{
     background-color: #fff;
@@ -40,6 +45,7 @@ body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-w
 
 /*trainer-card*/
 .trainer-card img{width: 160px !important;}
+/**/
 
 /*===================*/
 @media (min-width: 576px)
