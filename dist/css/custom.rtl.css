@@ -8,6 +8,7 @@ body{direction:rtl;font-family:myFirstFont, Arial;}
 body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header{
 	right:0px;
 }
+body.login-page{background:url(../img/logo.png) no-repeat;background-position: top center;background-size: 150px auto;}
 .nav {padding-right:0px;}
 .main-sidebar{
 	background-color:#0056b3;
