@@ -8,7 +8,7 @@ body{direction:rtl;font-family:myFirstFont, Arial;}
 body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer, body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header{
 	right:0px;
 }
-body.login-page{background:url(../img/logo.png) no-repeat #eee;background-position: top center;background-size: 150px auto;}
+.ltr { direction: ltr}
 .nav {padding-right:0px;}
 .main-sidebar{
 	background-color:#0056b3;
@@ -19,11 +19,6 @@ body.login-page{background:url(../img/logo.png) no-repeat #eee;background-positi
 [class*=sidebar-dark] .brand-link{border-bottom: 1px solid rgba(255,255,255,0.5);}
 [class*=sidebar-dark] .user-panel{border-bottom:1px solid rgba(255,255,255,0.1);}
 .brand-link .brand-image{float: right;}
-ul.nav.nav-treeview{background: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 0px 0px 5px 5px;
-    box-shadow: rgb(0 0 0 / 40%) 0px 1px;
-    
-    border-top: none !important;}
 .content-header h1{text-align: right !important;}
 [class*=sidebar-dark] .btn-sidebar, [class*=sidebar-dark] .form-control-sidebar, [class*=sidebar-dark] .form-control-sidebar:focus{
     background-color: #fff;
@@ -46,7 +41,6 @@ ul.nav.nav-treeview{background: rgba(0, 0, 0, 0.3) !important;
 
 /*trainer-card*/
 .trainer-card img{width: 160px !important;}
-/**/
 
 /*===================*/
 @media (min-width: 576px)
@@ -80,4 +74,19 @@ ul.nav.nav-treeview{background: rgba(0, 0, 0, 0.3) !important;
 
 /*===================================================*/
 
+/*===================datatable=======================*/
+.dataTables_filter{padding:10px;float: left;}
+#example1_wrapper .dt-buttons{float: right;padding: 10px;}
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-radius:0px !important;}
+/*===================================================*/
+/*======================Reports form=============================*/
+.input-3rem-width{width:3rem;}
+.input-8rem-max-width{max-width:8rem;}
+/*===============================================================*/
+/*============================================login custom radio=========================================*/
 
+/*===================================================================================================*/
+/*==========================================Long datatable padding-0.5rem=========================================================*/
+.table-p06 td, .table-p06 th{padding:0.6rem !important;}
+/*===============================================================================================================================*/
