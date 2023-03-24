@@ -181,6 +181,30 @@
       <span class="brand-text font-weight-light">البرمجية</span>
     </a>
 
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">محمد عمّار</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -296,7 +320,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="bp_rh_add.html" class="nav-link ">
+                <a href="bp_infos.html" class="nav-link ">
                   <i class="far fa-circle nav-icon"></i>
                   <p>إضافة موظف/عامل </p>
                 </a>
@@ -365,6 +389,9 @@
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
@@ -374,11 +401,11 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">المكتبة الجهوية بقفصة</h1>
+            <h1 class="m-0">إدارة الأنشطة</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right text-right">
-              <li class="breadcrumb-item"><a href="#">المكتبة</a></li>
+              <li class="breadcrumb-item"><a href="#">إدارة الأنشطة</a></li>
               <li class="breadcrumb-item active">اسم البرمجية</li>
             </ol>
           </div><!-- /.col -->
@@ -389,298 +416,291 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="card card-widget widget-user">
-
-              <div class="widget-user-header text-white" style="background: url('../../dist/img/photo1.jpg') center center;background-size:cover;width: 400px;">
-                <h3 class="widget-user-username text-center bg-primary">المكتية الجهوية بقفصة</h3>
-                <h5 class="bg-secondary text-center">31/12/2022 17:14</h5>
-              </div>
-              
-              <div class="card-footer">
-                <div class="row">
-                  <div class="col-sm-4 border-right">
-                    <div class="description-block">
-                      <h5 class="description-header">19/13/1970</h5>
-                      <span class="description-text">التأسيس</span>
-                    </div>
-
-                  </div>
-                  <div class="col-sm-4 border-right">
-                    <div class="description-block">
-                      <h5 class="description-header">615464001</h5>
-                      <span class="description-text">رمز المكتبة</span>
-                    </div>
-
-                  </div>
-                  <div class="col-sm-4 border-right">
-                    <div class="description-block">
-                      <h5 class="description-header">01</h5>
-                      <span class="description-text">الصنف</span>
-                    </div>
-
-                  </div>
-                  <div class="col-sm-12">
-                    <hr class="hr">
-                  </div>  
-                  <div class="col-sm-4 border-right">
-                    <div class="description-block">
-                      <h5 class="description-header">13,000</h5>
-                      <span class="description-text">رصيد الوثائق</span>
-                    </div>
-
-                  </div>
-
-                  <div class="col-sm-4">
-                    <div class="description-block">
-                      <h5 class="description-header">35</h5>
-                      <span class="description-text">موظف و عامل</span>
-                    </div>
-                    <br>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="description-block">
-                      <h5 class="description-header">76221677</h5>
-                      <span class="description-text">الهاتف</span>
-                    </div>
-                    <br>
-                  </div>
-                  <div class="col-sm-12">
-                    
-                    <div class="descriptive-block">
-                      <h6 class="descrptive-text text-center text-secondary">المكتبة الجهوية بقفصة</h6>
-                    </div>
-                    <div class="card-footer p-0">
-                      
-                    </div>
-                  </div>
-
+      <div class="card card-primary">
+        <div class="card-header">
+          <h5 class="text-right">إدارة الأنشطة</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-3">
+              <a class="info-box bg-light btn_trigger" href="#" data-target="act_add">
+                <span class="info-box-icon bg-success "><i class="fa fa-plus-circle"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text"> إضافة نشاط</span>
+                  <span class="info-box-number"></span>
                 </div>
 
-              </div>
+              </a><!--/.info-box-->
             </div>
-          </div>
-          <!--./col-sm-4-->
-          <div class="card card-primary card-outline card-outline-tabs col-sm-8">
-            <div class="card-header p-0 border-bottom-0">
-            <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-            <li class="nav-item">
-            <a class="nav-link active" id="custom-tabs-four-home-tab" data-toggle="pill" href="#custom-tabs-four-home" role="tab" aria-controls="custom-tabs-four-home" aria-selected="true">بيانات عامّة</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" id="custom-tabs-four-profile-tab" data-toggle="pill" href="#custom-tabs-four-profile" role="tab" aria-controls="custom-tabs-four-profile" aria-selected="false">الاتصال و التواصل</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" id="custom-tabs-four-messages-tab" data-toggle="pill" href="#custom-tabs-four-messages" role="tab" aria-controls="custom-tabs-four-messages" aria-selected="false">البنية الأساسية</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" id="custom-tabs-four-settings-tab" data-toggle="pill" href="#custom-tabs-four-settings" role="tab" aria-controls="custom-tabs-four-settings" aria-selected="false">احصائيات المنطقة</a>
-            </li>
-            </ul>
+            <div class="col-sm-3">
+              <a class="info-box bg-light btn_trigger" href="#" data-target="act_list">
+                <span class="info-box-icon bg-primary "><i class="fas fa-search-dollar"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text"> قائمة الأنشطة</span>
+                  <span class="info-box-number">
+                    10
+                    <small> هذه السنة</small>
+                  </span>
+                </div>
+
+              </a><!--/.info-box-->
             </div>
-            <div class="card-body">
-            <div class="tab-content" id="custom-tabs-four-tabContent">
-            <div class="tab-pane fade active show" id="custom-tabs-four-home" role="tabpanel" aria-labelledby="custom-tabs-four-home-tab">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">اسم المكتبة</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="اسم المكتبة">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الرقم التسلسلي</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الرقم التسلسلي ">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">تاريخ التأسيس</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="تاريخ التأسيس">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الصنف</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الصنف">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">توقيت العمل</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="توقيت العمل">
-                </div>
-              </div>
             
-            </div>
-            <div class="tab-pane fade" id="custom-tabs-four-profile" role="tabpanel" aria-labelledby="custom-tabs-four-profile-tab">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">العنوان</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="العنوان">
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="card tab" id="act_list">
+                <div class="card-header">
+                  <h5 class="text-center"> قائمة الأنشطة</h5>
                 </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الترقيم البريدي</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الترقيم البريدي">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">البلدية</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="البلدية">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">المعتمدية</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="المعتمدية">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الدائرة</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الدائرة">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الولاية</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الولاية">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الهاتف</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الهاتف">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">الفاكس</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="الفاكس">
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">البريد الإلكتروني</label>
-                  <input class="float-right form-control" type="text" name="" id="" placeholder="البريد الإلكتروني">
-                </div>
-              </div>
-              
-            </div>
-            <div class="tab-pane fade" id="custom-tabs-four-messages" role="tabpanel" aria-labelledby="custom-tabs-four-messages-tab">
-              
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right">عدد الأقسام</label>
-                   <input type="text" name="" id="" class="float-right form-control" placeholder="عدد الأقسام">
-                  </div>
-                <div class="col-sm-12 mt-2">
-                  <table class="table float-right">
+                <div class="card-body">
+                  <table class="table table-bordered">
                     <thead>
-                      <tr><th class="text-right">القسم</th><th class="text-right">الملاحظات</th></tr>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر جانفي</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
                     </thead>
                     <tbody>
-                     <tr>
-                      <td class="text-right">قسم أطفال</td>
-                      <td class="text-right"><textarea name="" id="" cols="30" rows="5" class="form-control text-right" placeholder="الملاحظات">يحتاج إلى التوسعة</textarea></td>
-                     </tr>
-                     <tr>
-                      <td class="text-right">قسم شباب و كهول</td>
-                      <td class="text-right"><textarea name="" id="" cols="30" rows="5" class="form-control text-right" placeholder="الملاحظات">يحتاج إلى التوسعة</textarea></td>
-                     </tr>
+                      <tr class="td activity_context text-center bg-light">
+                        <td class="text-center" colspan="4">البطولة الوطنية للمطالعة</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                      <tr>
+                        <td class="text-center">الجلسة التأسيسة</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">أعضاء اللجنة المحلية لتقييم البطولة الوطنية</td>
+                        <td class="text-center">08</td>
+                      </tr>
                     </tbody>
-                  </table>
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">المساحة الجملية</label>
-                   <input class="float-right form-control" type="text" name="" id="" placeholder="المساحة الجملية">
-                  </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">عدد الطوابق</label>
-                   <input class="float-right form-control" type="text" name="" id="" placeholder="عدد الطوابق">
-                  </div>
-                 
-
-                 <!-- <div class="col-sm-12">
-                    <table class="table-bordered table">
-                      <thead>
-                        <tr>
-                          <th class="text-center">القاعة</th>
-                          <th class="text-center">المساحة</th>
-                          <th class="text-center">مجال الاستعمال</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="text-center">قاعة 1</td>
-                          <td class="text-center">207م</td>
-                          <td class="text-center">
-                            <textarea name="" id="" cols="30" rows="10" class="form-control text-right">
-                              قاعة الأطفال(مطالعة و إعارة)
-                            </textarea>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">قاعة 2</td>
-                          <td class="text-center">316م</td>
-                          <td class="text-center">
-                            <textarea name="" id="" cols="30" rows="10" class="form-control text-right">
-                              قاعة المطالعة
-                            </textarea>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>-->
-                  
-                
-                <div class="col-sm-6 mt-2">
-                  <label for="" class="text-right float-right ">المقاعد</label>
-                   <input class="float-right form-control" type="text" name="" id="" placeholder="المقاعد" value="297" disabled>
-                  </div>
-                <div class="col-sm-12 mt-2">
-                  <label for="" class="text-right float-right">توزيع المقاعد</label>  
-                  <table class="table table-striped float-right">
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
                     <thead>
-                      <tr><th>الأقسام</th><th>الأطفال</th><th>شباب</th><th>كهول</th><th>المجموع</th></tr>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر فيفري</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="td activity_context text-center bg-light">
+                        <td class="text-center" colspan="4">الدورة الأولى للبطولة الوطنية للمطالعة</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                      <tr>
+                        <td class="text-center">الجلسة التقييمية الأولى و الثانية للجنة المحلية لتقييم البطولة
+                          الوطنية للمطالعة</td>
+                        <td class="text-center"> المكتبة الجهوية بقفصة</td>
+                        <td class="text-center">جميع الفئات</td>
+                        <td class="text-center">74</td>
+                      </tr>
+                    </tbody>
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر مارس</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>06</td>
-                        <td>62</td>
-                        <td colspan="2">235</td>
-                        <td>297</td>
-                        
+                        <td class="text-center">يوم دراسي تكويني حول تنفيذ الخطة الوطنية لتعشيب المجموعات
+                          الوثائقية 04 مارس 2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">أمناء المكتبات العمومية</td>
+                        <td class="text-center">30</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">جلسة تقييمية للبطولة الوطنية للمطالعة في 19/03/2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">جميع الفئات العمرية</td>
+                        <td class="text-center">74</td>
+                      </tr>
+                      <tr class="td activity_context text-center bg-light text-bold">
+                        <td class="text-center" colspan="4">الاحتفال بتظاهرة الأيام الوطنية للمطالعة و
+                          المعلومات: الطفولة المبكرة مسؤوليتنا الدورة 29 من 10 - 22 أفريل</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                    </tbody>
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر أفريل</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="td activity_context text-center bg-light">
+                        <td class="text-center" colspan="4">الدورة الأولى للبطولة الوطنية للمطالعة</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                      <tr>
+                        <td class="text-center">الجلسة التقييمية الأولى و الثانية للجنة المحلية لتقييم البطولة
+                          الوطنية للمطالعة</td>
+                        <td class="text-center"> المكتبة الجهوية بقفصة</td>
+                        <td class="text-center">جميع الفئات</td>
+                        <td class="text-center">74</td>
                       </tr>
                     </tbody>
-                  </table>
-                </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">ملكية المحل</label>
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر ماي</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">يوم دراسي تكويني حول تنفيذ الخطة الوطنية لتعشيب المجموعات
+                          الوثائقية 04 مارس 2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">أمناء المكتبات العمومية</td>
+                        <td class="text-center">30</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">جلسة تقييمية للبطولة الوطنية للمطالعة في 19/03/2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">جميع الفئات العمرية</td>
+                        <td class="text-center">74</td>
+                      </tr>
+                      <tr class="td activity_context text-center bg-light text-bold">
+                        <td class="text-center" colspan="4">الاحتفال بتظاهرة الأيام الوطنية للمطالعة و
+                          المعلومات: الطفولة المبكرة مسؤوليتنا الدورة 29 من 10 - 22 أفريل</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                    </tbody>
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر نوفمبر</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="td activity_context text-center bg-light">
+                        <td class="text-center" colspan="4">الدورة الأولى للبطولة الوطنية للمطالعة</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                      <tr>
+                        <td class="text-center">الجلسة التقييمية الأولى و الثانية للجنة المحلية لتقييم البطولة
+                          الوطنية للمطالعة</td>
+                        <td class="text-center"> المكتبة الجهوية بقفصة</td>
+                        <td class="text-center">جميع الفئات</td>
+                        <td class="text-center">74</td>
+                      </tr>
+                    </tbody>
+                  </table><!--/.table activity of the month -->
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th class="text-center" colspan="4">شهر ديسمبر</th>
+                      </tr>
+                      <tr>
+                        <th class="text-center">النشاط</th>
+                        <th class="text-center">مكان النشاط</th>
+                        <th class="text-center">الشريحة المستهدفة</th>
+                        <th class="text-center">عدد المستفيدين</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">يوم دراسي تكويني حول تنفيذ الخطة الوطنية لتعشيب المجموعات
+                          الوثائقية 04 مارس 2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">أمناء المكتبات العمومية</td>
+                        <td class="text-center">30</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">جلسة تقييمية للبطولة الوطنية للمطالعة في 19/03/2021</td>
+                        <td class="text-center">المكتبة الجهوية</td>
+                        <td class="text-center">جميع الفئات العمرية</td>
+                        <td class="text-center">74</td>
+                      </tr>
+                      <tr class="td activity_context text-center bg-light text-bold">
+                        <td class="text-center" colspan="4">الاحتفال بتظاهرة الأيام الوطنية للمطالعة و
+                          المعلومات: الطفولة المبكرة مسؤوليتنا الدورة 29 من 10 - 22 أفريل</td>
+                      </tr>
+                      <!--this row won't be shown if there is no context for example البطولة الوطنية للمطالعة-->
+                    </tbody>
+                  </table><!--/.table activity of the month -->
 
-                  <select name="" id="" class="float-right form-control" aria-placeholder="ملكية المحل">
-                    <option value="">منجز من قبل الوزارة</option>
-                    <option value="">منجز من قبل السلط المحلية</option>
-                    <option value="">محل مسوغ</option>
-                    <option value="">محل مهيأ</option>
-                  </select>
+                </div><!--./card-body-->
+              </div>
+              <div class="card tab" id="act_add">
+                <div class="card-header"><h5 class="text-center">إضافة نشاط جديد</h5></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="form-group col-sm-4 text-right">
+                      <label for="" class="text-right">النشاط</label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4 text-right">
+                      <label for="" class="text-right">التاريخ</label>
+                      <input type="date" name="" id="" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-4 text-right">
+                      <label for="" class="text-right">المكان</label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-6 text-right">
+                      <label for="" class="text-right">الشريحة المستهدفة</label>
+                      <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="form-group col-sm-6 text-right">
+                      <label for="" class="text-right">المناسبة الوطنية (إن وجد)</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="مثلا البطولة الوطنية للمطالعة ">
+                    </div>
+                    <div class="form-group col-sm-6 text-right">
+                      <label for="" class="text-right">الملاحظات</label>
+                      <textarea class="form-control" ></textarea>
+                    </div>
+                  </div>
+                  
                 </div>
-                
-              </div>
-            </div>
-            <div class="tab-pane fade" id="custom-tabs-four-settings" role="tabpanel" aria-labelledby="custom-tabs-four-settings-tab">
-              <div class="row">
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">التعداد السكاني</label>
-                   <input type="text" class="float-right form-control" placeholder="التعداد السكاني">
-                  </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">مؤسسات التعليم الابتدائي</label>
-                   <input type="text" name="" id="" class="float-right form-control" placeholder="مؤسسات التعليم الابتدائي">
-                  </div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">المؤسسات التعليم الثانوي</label>
-                   <input type="text" name="" id="" class="float-right form-control" placeholder="المؤسسات التعليم الثانوي"></div>
-                <div class="col-sm-6">
-                  <label for="" class="text-right float-right ">مؤسسات التعليم العالي</label>
-                   <input type="text" name="" id="" class="float-right form-control" placeholder="مؤسسات التعليم العالي"></div>   
-              </div>
-              
-              
-              
-            </div>
-            </div>
-            </div><!--/.card-body-->
-            <div class="card-footer">
-              <input type="submit" value="تأكيد" class="btn btn-primary float-left">
-            </div>
-            
-            </div><!--/.col-sm-8 /.card-->
-        </div><!--/.row-->
-        <div class="row"> </div>
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
+                <div class="card-footer">
+                   <button class="btn btn-danger" type="reset">إلغاء</button>
+                  <button class="btn btn-success">تأكيد</button>
+                 
+                </div>
+              </div><!--/.card-->
+            </div><!--/.col-sm-12-->
+          </div><!--/.row-->
+        </div>
+
+      </div>
     </section>
     <!-- /.content -->
   </div>
@@ -689,7 +709,7 @@
     <strong>Copyright &copy; 2023 <a href="#">إدارة المكتبات</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> Demo
+     <b>Version</b> Demo
     </div>
   </footer>
 
@@ -736,23 +756,19 @@
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="../../dist/js/pages/dashboard.js"></script>
 <script>
-  function addRow() {
-  // Get the input values
-  const inputElements = document.querySelectorAll('input[type="text"].tdElem');
-  const values = Array.from(inputElements).map(input => input.value);
-
-  // Create a new row and cells
-  const table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
-  const newRow = table.insertRow();
-
-  values.forEach(value => {
-    const newCell = newRow.insertCell();
-    newCell.innerHTML = value;
+  $(document).ready(function(){
+    $('.tab').hide();
+    $('[data-target="act_add"]').click(function(){
+      $('.tab').hide(function(){
+        $('#act_add').show('fast');
+      })
+    });
+    $('[data-target="act_list"]').click(function(){
+      $('.tab').hide(function(){
+        $('#act_list').show('fast');
+      })
+    });
   });
-
-  // Clear the input values
-  inputElements.forEach(input => input.value = "");
-}
 </script>
 </body>
 </html>

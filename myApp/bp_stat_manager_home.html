@@ -28,6 +28,9 @@
   <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="../../plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -184,6 +187,30 @@
           style="opacity: .8">
         <span class="brand-text font-weight-light">البرمجية</span>
       </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../../dist/img/user8-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">محمد عمّار</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -369,6 +396,8 @@
           </ul>
         </nav>
         <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
     </aside>
 
     <!-- Content Wrapper. Contains page content -->
@@ -378,11 +407,11 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1 class="m-0">المقابيض</h1>
+              <h1 class="m-0">الاحصائيات</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right text-right">
-                <li class="breadcrumb-item"><a href="#">المقابيض</a></li>
+                <li class="breadcrumb-item"><a href="#">الاحصائيات</a></li>
                 <li class="breadcrumb-item active">اسم البرمجية</li>
               </ol>
             </div><!-- /.col -->
@@ -400,138 +429,285 @@
           <!-- /.row -->
           <!-- Main row -->
           <div class="row">
+            
             <div class="col-sm-6">
-              <div class="row">
-                <div class="col-sm-6">
-                  <a class="info-box bg-light" href="bp_finance-operations-list.html">
-                    <span class="info-box-icon bg-primary "><i class="fas fa-search-dollar"></i></span>
-                    <div class="info-box-content">
-                      <span class="info-box-text"> قائمة المقابيض</span>
-                      <span class="info-box-number">
-                        16700
-                        <small>د.ت هذه السنة</small>
-                      </span>
-                    </div>
-
-                  </a><!--/.info-box-->
-                </div>
-                <div class="col-sm-6">
-                  <a class="info-box bg-light" href="bp_finance-operation-add.html">
-                    <span class="info-box-icon bg-success "><i class="fa fa-plus-circle"></i></span>
-                    <div class="info-box-content">
-                      <span class="info-box-text">إضافة مقابيض</span>
-                      <span class="info-box-number">
-
-                        <small></small>
-                      </span>
-                    </div>
-
-                  </a><!--/.info-box-->
-                </div>
-                <div class="col-sm-6">
-                  <a class="info-box bg-light" href="bp_finance-category-list.html">
-                    <span class="info-box-icon bg-primary"><i class="fas fa-search-dollar"></i></span>
-                    <div class="info-box-content">
-                      <span class="info-box-text"> أصناف المقابيض</span>
-                      <span class="info-box-number">
-                        5
-                        <small>أصناف</small>
-                      </span>
-                    </div>
-
-                  </a><!--/.info-box-->
-                </div>
-                <div class="col-sm-6">
-                  <a class="info-box bg-light" href="bp_finance-category-add.html">
-                    <span class="info-box-icon bg-success"><i class="fa  fa-folder-plus text-white"></i></span>
-                    <div class="info-box-content">
-                      <span class="info-box-text">إضافة صنف مقابيض</span>
-                      <span class="info-box-number">
-
-                        <small></small>
-                      </span>
-                    </div>
-
-                  </a><!--/.info-box-->
-                </div>
-                <div class="col-sm-12">
-                  <div class="card text-right" style="height:190px";>
-                    <div class="card-header">
-                      <h3>إدارة المقابيض</h3>
-                    </div>
-                  <div class="card-body">
-                    <p> هذه الوحدة تمكن المستخدم من إدارة المقابيض   و كذلك أصناف المقابيض <i class="fas fa-books"></i></p>
-                  </div>
+              <div class="card card-primary">
+                <div class="card-header border-0">
+                  <h3 class="card-title">تقدم عمليات الاحصاء الشهرية</h3>
+                  <div class="card-tools">
+                    <!--<a href="#" class="btn btn-tool btn-sm">
+                      <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#" class="btn btn-tool btn-sm">
+                      <i class="fas fa-bars"></i>
+                    </a>-->
                   </div>
                 </div>
-
+                <div class="card-body table-responsive">
+                          <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th style="width: 10px">#</th>
+                                <th>المكتبات الجهوية</th>
+                                <th>تقدم الإحصاء</th>
+                                <th>تاريخ آخر إحصاء</th>
+                                <th style="width: 40px">النسبة</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1.</td>
+                                <td><a class="pb" data-id="data1" style="cursor: pointer;">المكتبة الجهوية تونس 1</a></td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-danger">55%</span></td>
+                              </tr>
+                              <tr>
+                                <td>2.</td>
+                                <td><a class="pb" data-id="data2" style="cursor: pointer;">المكتبة الجهوية بأريانة</a></td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-warning">70%</span></td>
+                              </tr>
+                              <tr>
+                                <td>3.</td>
+                                <td>المكتبة الجهوية ببن عروس</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-primary">30%</span></td>
+                              </tr>
+                              <tr>
+                                <td>4.</td>
+                                <td>المكتبة الجهوية بمدنين</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-success">90%</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                </div>
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card text-right">
+              <div class="card card-primary">
                 <div class="card-header border-0">
-                  
+                  <h3 class="card-title">المكتبات العمومية </h3>
                 </div>
-                <div class="card-body">
-                  <div class="d-flex">
-                    <p class="d-flex flex-column">
-                      <span class="text-bold text-lg">16700 د.ت</span>
-                      <span>مجموع المداخيل</span>
-                    </p>
-                    <p class="ml-auto d-flex flex-column text-right">
-                      <span class="text-success">
-                        <i class="fas fa-arrow-up"></i> 00.9%
-                      </span>
-                      <span class="text-muted">مقارنة بالسنة الفارطة</span>
-                    </p>
-                  </div>
+                <div class="card-body table-responsive">
+                          <table class="table table-striped bd">
+                            <thead>
+                              <tr>
+                                <th style="width: 10px">#</th>
+                                <th>المكتبات العمومية</th>
+                                <th style="width:8rem">تقدم الإحصاء</th>
+                                <th style="width:10rem">تاريخ آخر إحصاء</th>
+                                <th style="width: 40px">النسبة</th>
+                              </tr>
+                            </thead>
+                            <tbody class="data data1">
+                              <tr>
+                                <td>1.</td>
+                                <td>المكتبة العمومية تونس 1</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-danger">55%</span></td>
+                              </tr>
+                              <tr>
+                                <td>2.</td>
+                                <td>المكتبة العمومية تونس 2</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-warning">70%</span></td>
+                              </tr>
+                              <tr>
+                                <td>3.</td>
+                                <td>المكتبة العمومية تونس 3</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-primary">30%</span></td>
+                              </tr>
+                              <tr>
+                                <td>4.</td>
+                                <td>المكتبة العمومية تونس 4</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-success">90%</span></td>
+                              </tr>
+                              <tr>
+                                <td>5.</td>
+                                <td>المكتبة العمومية تونس 5</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-success">90%</span></td>
+                              </tr>
+                              <tr>
+                                <td>6.</td>
+                                <td>المكتبة العمومية تونس 6</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-warning">70%</span></td>
+                              </tr>
+                              <tr>
+                                <td>7.</td>
+                                <td>المكتبة العمومية تونس 7</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-primary">30%</span></td>
+                              </tr>
 
-                  <div class="position-relative mb-4">
-                    <div class="chartjs-size-monitor">
-                      <div class="chartjs-size-monitor-expand">
-                        <div class=""></div>
-                      </div>
-                      <div class="chartjs-size-monitor-shrink">
-                        <div class=""></div>
-                      </div>
-                    </div>
-                    <canvas id="sales-chart" height="250" style="display: block; height: 200px; width: 572px;"
-                      width="715" class="chartjs-render-monitor"></canvas>
-                  </div>
-                  <div class="d-flex flex-row justify-content-end">
-                    <span class="mr-2">
-                      <i class="fas fa-square text-primary"></i> مداخيل السنة الحالية
-                    </span>
-                    <span>
-                      <i class="fas fa-square text-gray"></i> مداخيل السنة الماضية
-                    </span>
-                  </div>
+                            </tbody>
+                            <tbody class="data data2">
+                              <tr>
+                                <td>1.</td>
+                                <td>المكتبة المعلوماتية بأريانة</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-danger">55%</span></td>
+                              </tr>
+                              <tr>
+                                <td>2.</td>
+                                <td>المكتبة العمومية بالمنزه السادس
+                                  (بالمركب الثقافي والشبابي )
+                                  </td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-warning">70%</span></td>
+                              </tr>
+                              <tr>
+                                <td>3.</td>
+                                <td>المكتبة العمومية بقلعة الأندلس</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-primary">30%</span></td>
+                              </tr>
+                              <tr>
+                                <td>4.</td>
+                                <td>المكتبة العمومية بقلعة الأندلس</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-success">90%</span></td>
+                              </tr>
+                              <tr>
+                                <td>5.</td>
+                                <td>المكتبة العمومية بقلعة الأندلس</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-success">90%</span></td>
+                              </tr>
+                              <tr>
+                                <td>6.</td>
+                                <td>المكتبة العمومية بحي الغزالة</td>
+                                <td>
+                                  <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-warning">70%</span></td>
+                              </tr>
+                              <tr>
+                                <td>7.</td>
+                                <td>المكتبة العمومية بالمنيهلة</td>
+                                <td>
+                                  <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                  </div>
+                                </td>
+                                <td>12/03/2023</td>
+                                <td><span class="badge bg-primary">30%</span></td>
+                              </tr>
+                            </tbody>
+                            <tfoot>
+                              <p class="text-center data0">الرجاء اختيار مكتبة جهوية  ...</p>
+                            </tfoot>
+                          </table>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
+          <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
     </div>
-    <!-- /.row (main row) -->
-  </div><!-- /.container-fluid -->
-  </section>
-  <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2023 <a href="#">إدارة المكتبات</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> Demo
-    </div>
-  </footer>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <strong>Copyright &copy; 2023 <a href="#">إدارة المكتبات</a>.</strong>
+      All rights reserved.
+      <div class="float-right d-none d-sm-inline-block">
+        <b>Version</b> Demo
+      </div>
+    </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
 
@@ -569,16 +745,58 @@
   <!--<script src="../../dist/js/demo.js"></script>-->
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
   <script src="../../dist/js/pages/dashboard.js"></script>
+  <script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+  <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 
   <script>
-    $(function(){'use strict'
-var ticksStyle={fontColor:'#495057',fontStyle:'bold'}
-var mode='index'
-var intersect=true
-var $salesChart=$('#sales-chart')
-var salesChart=new Chart($salesChart,{type:'bar',data:{labels:['JUN','JUL','AUG','SEP','OCT','NOV','DEC'],datasets:[{backgroundColor:'#007bff',borderColor:'#007bff',data:[1000,2000,3000,2500,2700,2500,3000]},{backgroundColor:'#ced4da',borderColor:'#ced4da',data:[700,1700,2700,2000,1800,1500,2000]}]},options:{maintainAspectRatio:false,tooltips:{mode:mode,intersect:intersect},hover:{mode:mode,intersect:intersect},legend:{display:false},scales:{yAxes:[{gridLines:{display:true,lineWidth:'4px',color:'rgba(0, 0, 0, .2)',zeroLineColor:'transparent'},ticks:$.extend({beginAtZero:true,callback:function(value){if(value>=1000){value/=1000
-value+='k'}
-return '$'+value}},ticksStyle)}],xAxes:[{display:true,gridLines:{display:false},ticks:ticksStyle}]}}})})
+    $(function () {
+      $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": [{ extend: "copy", text: "نسخ" }, { extend: "csv" }, "excel", "pdf", { extend: "print", text: "طباعة" }, { extend: "colvis", text: "الخانات المظهرة" }],
+        "language": {
+          "lengthMenu": "إظهار _MENU_ records في كل صفحة",
+          "zeroRecords": "لا يوجد نتائج لهذا البحث",
+          "info": " إظهار صفحة _PAGE_ من _PAGES_",
+          "infoEmpty": "لا يوجد بيانات حاليا",
+          "infoFiltered": "(filtered from _MAX_ total records)",
+          "search": "&nbsp;بحث:&nbsp;",
+          "copy": "نسخ",
+          "paginate": {
+            "first": "الأول",
+            "last": "الأخير",
+            "next": "التالي",
+            "previous": "السابق"
+          },
+        }
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    });
+  </script>
+  <script>
+    $(document).ready(function() {
+  // Hide all tbody elements with class "data"
+  $("tbody.data, .bd thead").hide();
+
+  // Add click event listener to all td>a elements with class "pb"
+  $("td>a.pb").click(function() {
+    // Get the data-id attribute of the clicked element
+    var dataId = $(this).data("id");
+    //console.log(dataId);
+
+    // Hide all tbody elements with class "data"
+    $("tbody.data, .data0").hide();
+    //console.log("tbody hidden");
+    // Show the tbody element with matching data-id value
+    $("tbody." + dataId +", .bd thead").show();
+    //console.log("tbody"+dataId+" shown");
+  });
+});
   </script>
 </body>
 

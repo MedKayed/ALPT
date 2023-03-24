@@ -423,7 +423,7 @@
         <!-- /.row -->
         <!-- Main row -->
         <div class="row">
-         <!-- <div class="col-sm-12 mb-1">
+        <!--  <div class="col-sm-12 mb-1">
             <div class="float-right ml-1">
               
               <div class="input-group">
@@ -466,15 +466,14 @@
             <!--stepper advanced form-->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title ">إضافة الإحصاء اليومي</h3>
+                <h3 class="card-title ">إحصاء 
+                  <button type="button" id="btn_pb" class="btn btn-light" data-toggle="modal" data-target="#exampleModal">
+                    22/03/2023 
+                  </button>
+                  |
+                   المكتبة العمومية بالقصر  </h3>
               </div>
               <div class="card-body p-0">
-                <div class="col-sm-12 pt-4 pr-4">
-                  <div class="form-group text-right row" style="direction:rtl;">
-                    <label class="col-sm-1 pt-2">التاريخ</label>
-                    <input type="date" id="datepicker_stat" class="form-control col-sm-3">
-                    </div>
-                </div>
                 <div class="bs-stepper">
                   <div class="bs-stepper-header" role="tablist">
                     <!-- your steps here -->
@@ -500,22 +499,22 @@
                           <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المنخرطين</h5></div>
                         <div class="form-group col-sm-12">
                           <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          <input type="text" class="form-control" name="nb-male" value="02" placeholder="عدد التلاميذ (الذكور)">
                           </div>
                           <div class="form-group col-sm-12">
                             <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
-                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                            <input type="text" class="form-control" name="nb-male" value="06" placeholder=" عدد التلميذات (الإناث)">
                           </div>
                         </div>
                         <div class="col-sm-6">
                           <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المطالعين</h5></div>
                         <div class="form-group col-sm-12">
                           <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          <input type="text" class="form-control" name="nb-male" value="09" placeholder="عدد التلاميذ (الذكور)">
                           </div>
                           <div class="form-group col-sm-12">
                             <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
-                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                            <input type="text" class="form-control" name="nb-male" value="11" placeholder=" عدد التلميذات (الإناث)">
                           </div>
                         </div>
                       </div>
@@ -524,11 +523,11 @@
                         <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المستعيرين</h5></div>
                         <div class="form-group col-sm-6">
                           <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          <input type="text" class="form-control" name="nb-male" value="02" placeholder="عدد التلاميذ (الذكور)">
                           </div>
                           <div class="form-group col-sm-6">
                             <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
-                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                            <input type="text" class="form-control" name="nb-male" value="04" placeholder=" عدد التلميذات (الإناث)">
                           </div>
                           
                         
@@ -560,20 +559,20 @@
                             <tbody>
                               <tr>
                                 <td class="bg-secondary">&nbsp;</td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td><input type="number" class="form-control nbr" value="0"></td>
-                                <td class="text-center"><label for="" id="res1">0</label></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="02"></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="0"></td>
+                                <td><input type="text" class="form-control nbr" value="0"></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="01"></td>
+                                <td><input type="text" class="form-control nbr" value="0"></td>
+                                <td><input type="text" class="form-control nbr" value="02"></td>
+                                <td><input type="text" class="form-control nbr" value="02"></td>
+                                <td><input type="text" class="form-control nbr" value="0"></td>
+                                <td class="text-center"><label for="" id="res1">12</label></td>
                               </tr>
                             </tbody>
                           </table>
@@ -605,20 +604,20 @@
                             <tbody>
                               <tr>
                                 <td class="bg-secondary">&nbsp;</td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td><input type="number" class="form-control nbr2" value="0"></td>
-                                <td class="text-center"><label for="" id="res2">0</label></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="0"></td>
+                                <td><input type="text" class="form-control nbr2" value="01"></td>
+                                <td><input type="text" class="form-control nbr2" value="02"></td>
+                                <td class="text-center"><label for="" id="res2">7</label></td>
                               </tr>
                             </tbody>
                           </table>
@@ -632,31 +631,31 @@
                       <div class="row">
                         <div class="form-group col-sm-6">
                           <label for="nb-male" class="float-right">عدد الطلبة الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد الطلبة (الذكور)">
+                          <input type="text" class="form-control" name="nb-male" value="12" placeholder="عدد الطلبة (الذكور)">
                           </div>
                           <div class="form-group col-sm-6">
                             <label for="nb_male" class="float-right"> عدد الطالبات (الإناث)</label>
-                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد الطالبات (الإناث)">
+                            <input type="text" class="form-control" name="nb-male" value="16" placeholder=" عدد الطالبات (الإناث)">
                           </div>
                       </div>
                       <div class="row">
                         <div class="form-group col-sm-6">
                           <label for="nb-male" class="float-right">عدد الإطارات و الموظفين الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد الإطارات و الموظفين الذكور">
+                          <input type="text" class="form-control" name="nb-male" value="04" placeholder="عدد الإطارات و الموظفين الذكور">
                           </div>
                           <div class="form-group col-sm-6">
                             <label for="nb_male" class="float-right"> عدد الإطارات و الموظفين الإناث</label>
-                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد الإطارات و الموظفين الإناث">
+                            <input type="text" class="form-control" name="nb-male" value="08" placeholder=" عدد الإطارات و الموظفين الإناث">
                           </div>
                       </div>
                       <div class="row">
                         <div class="form-group col-sm-6">
                           <label for="nb-male" class="float-right">عدد العملة و الحرفيين الذكور</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder="عدد العملة و الحرفيين الذكور">
+                          <input type="text" class="form-control" name="nb-male" value="02" placeholder="عدد العملة و الحرفيين الذكور">
                         </div>
                         <div class="form-group col-sm-6">
                           <label for="nb_male" class="float-right"> عدد العملة و الحرفيين الإناث</label>
-                          <input type="number" class="form-control" name="nb-male" placeholder=" عدد العملة و الحرفيين الإناث">
+                          <input type="text" class="form-control" name="nb-male" value="01" placeholder=" عدد العملة و الحرفيين الإناث">
                         </div>
                         <hr class=" mt-4 mb-4">
                         <div class="row">
@@ -685,20 +684,20 @@
                             <tbody>
                               <tr>
                                 <td class="bg-secondary">&nbsp;</td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td><input type="number" class="form-control nbr3" value="0"></td>
-                                <td class="text-center"><label for="" id="res3">0</label></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="0"></td>
+                                <td><input type="text" class="form-control nbr3" value="2"></td>
+                                <td><input type="text" class="form-control nbr3" value="2"></td>
+                                <td><input type="text" class="form-control nbr3" value="2"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="3"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="1"></td>
+                                <td><input type="text" class="form-control nbr3" value="0"></td>
+                                <td class="text-center"><label for="" id="res3">17</label></td>
                               </tr>
                             </tbody>
                           </table>
@@ -730,20 +729,20 @@
                             <tbody>
                               <tr>
                                 <td class="bg-secondary">&nbsp;</td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td><input type="number" class="form-control nbr4" value="0"></td>
-                                <td class="text-center"><label for="" id="res4">0</label></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="01"></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="0"></td>
+                                <td><input type="text" class="form-control nbr4" value="02"></td>
+                                <td class="text-center"><label for="" id="res4">08</label></td>
                               </tr>
                             </tbody>
                           </table>
@@ -794,6 +793,55 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">الاحصائيات</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row"> 
+          <div class="col-sm-3">الشهر و السنة</div>
+          <div class="col-sm-3"><input type="month" name="bdaymonth"></div>
+          
+        </div><!--/.row-->
+        <ul class="list-group pr-0">
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="23/03/2023"  id="pbd1">
+            <label for="pbd1" class="text-right">23/03/2023</label>
+          </li>
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="19/03/2023"  id="pbd2">
+            <label for="pbd2" class="text-right">19/03/2023</label>
+          </li>
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="18/03/2023"  id="pbd3">
+            <label for="pbd3" class="text-right">18/03/2023</label>
+          </li>
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="17/03/2023"  id="pbd4">
+            <label for="pbd4" class="text-right">17/03/2023</label>
+          </li>
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="15/03/2023"  id="pbd5">
+            <label for="pbd5" class="text-right">15/03/2023</label>
+          </li>
+          <li class="choice icheck-primary list-group-item">
+            <input type="radio" name="pb_name" value="17/03/2023"  id="pbd6">
+            <label for="pbd6" class="text-right">17/03/2023</label>
+          </li>
+        </ul>
+      </div><!--/.modal-body-->
+    </div><!--/.modal-content-->
+  </div><!--/.modal dialog-->
+</div><!--/.modal-->
+
+
 
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -868,17 +916,21 @@ $(document).ready(function(){
   $('.nbr4').on("change",function(){
     sumNumbers('nbr4','res4');
   });
+  /*const myUrl2 = new URL(window.location.toLocaleString());
+  console.log(myUrl2);
+  let b=myUrl2.searchParams.get("b");
+  console.log(b);*/
 });
 </script>
 <script>
-  $(function () {
-      $('#inputDate').datetimepicker({
-        
-        format: 'dd/mm/yyyy',
-        defaultViewDate:'today',
-        language: 'ar'
-      });
+  $(function(){
+    $("input[name='pb_name']").change(function(){
+      let date= $(this).val();
+      $('#btn_pb').text(date);
+      $('#exampleModal').modal('hide');
+      //console.log(date);
     });
+  })
 </script>
 </body>
 </html>
