@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>إدارة المطالعة العمومية </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="../plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/custom.rtl.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="../plugins/summernote/summernote-bs4.min.css">
+  <!-- stepper -->
+  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="100" width="100">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="bp_home.html" class="nav-link">الرئيسية</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="support.html" class="nav-link">الدعم الفني</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="bp_home.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">البرمجية</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="../dist/img/user8-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">محمد عمّار</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link ">
+              <i class="ion ion-ios-information-outline nav-icon"></i>
+              <p>
+                 إدارة المكتبة
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_infos.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> المكتبة الجهوية  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_info_home.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> المكتبات العمومية </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="ion ion-stats-bars nav-icon"></i>
+              <p>
+                 الإحصائيات و البيانات
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_statistiques.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إضافة إحصائيات </p>
+                </a>
+              </li>
+              <!--<li class="nav-item">
+                <a href="bp_infos.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إحصائيات المكتبة الجهوية </p>
+                </a>
+              </li>-->
+              <li class="nav-item">
+                <a href="bp_statistics_manager.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إحصائيات المكتبات العمومية </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="ion  ion-cash  nav-icon"></i>
+              <p>
+                 المقابيض السنوية
+                <i class="right fas fa-angle-left "></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_finance.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إدارة المقابيض </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_finance-operations-list.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>قائمة المقابيض </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_finance-operation-add.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إضافة مقابيض </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_finance-category-list.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>أصناف المقابيض </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_finance-category-add.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إضافة صنف مقابيض </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_finance_bp_manager_home.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>مقابيض المكتبات </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="ion ion-ios-people nav-icon"></i>
+              <p>
+                 الموارد البشرية
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_rh_add.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إضافة موظف/عامل </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_rh_list.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>قائمة الموظفين </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="ion ion-android-apps nav-icon"></i>
+              <p>
+                 إدارة الأنشطة
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_activities.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>أنشطة المكتبة الجهوية </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_activities.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>إضافة نشاط </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_activities.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>أنشطة المكتبات العمومية </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link ">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                 إدارة التقارير
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="bp_rapport_mensuel.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>التقارير الشهرية للمكتبات  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="bp_annual-report.html" class="nav-link ">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p> استخراج التقرير السنوي </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">الإحصائيات و البيانات</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right text-right">
+              <li class="breadcrumb-item"><a href="#">الإحصائيات و البيانات</a></li>
+              <li class="breadcrumb-item active">اسم البرمجية</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">...</div>
+        <!-- /.row -->
+        <!-- Main row -->
+        <div class="row">
+         <!-- <div class="col-sm-12 mb-1">
+            <div class="float-right ml-1">
+              
+              <div class="input-group">
+                <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-plus" aria-hidden="true"></i> ...إضافة إحصائية
+
+               </button>
+               <ul class="dropdown-menu text-right" style="">
+               <li class="dropdown-item"><a href="#">المنخرطين</a></li>
+               <li class="dropdown-item"><a href="#">المطالعين</a></li>
+               <li class="dropdown-item"><a href="#">المستعيرين</a></li>
+               <li class="dropdown-divider"></li>
+               <li class="dropdown-item"><a href="#">الوثائق المطالعة</a></li>
+               <li class="dropdown-item"><a href="#">الوثائق المعارة</a></li>
+               </ul>
+               </div>
+            </div>
+            <div class="float-right ml-1">
+              
+              <div class="input-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+               <i class="fa fa-bars" aria-hidden="true"></i> ...إحصائيات سابقة
+
+               </button>
+               <ul class="dropdown-menu text-right" style="">
+               <li class="dropdown-item"><a href="#">المنخرطين</a></li>
+               <li class="dropdown-item"><a href="#">المطالعين</a></li>
+               <li class="dropdown-item"><a href="#">المستعيرين</a></li>
+               <li class="dropdown-divider"></li>
+               <li class="dropdown-item"><a href="#">الوثائق المطالعة</a></li>
+               <li class="dropdown-item"><a href="#">الوثائق المعارة</a></li>
+               </ul>
+               </div>
+            </div>
+            
+          </div>-->
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <!--stepper advanced form-->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title ">إضافة الإحصاء اليومي</h3>
+              </div>
+              <div class="card-body p-0">
+                <div class="col-sm-12 pt-4 pr-4">
+                  <div class="form-group text-right row" style="direction:rtl;">
+                    <label class="col-sm-1 pt-2">التاريخ</label>
+                    <input type="date" id="datepicker_stat" class="form-control col-sm-3">
+                    </div>
+                </div>
+                <div class="bs-stepper">
+                  <div class="bs-stepper-header" role="tablist">
+                    <!-- your steps here -->
+                    <div class="step" data-target="#logins-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                        <span class="bs-stepper-circle">1</span>
+                        <span class="bs-stepper-label"> قسم الأطفال </span>
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#information-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                        <span class="bs-stepper-circle">2</span>
+                        <span class="bs-stepper-label"> قسم الشباب و الكهول</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bs-stepper-content">
+                    <!-- your steps content here -->
+                    <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المنخرطين</h5></div>
+                        <div class="form-group col-sm-12">
+                          <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          </div>
+                          <div class="form-group col-sm-12">
+                            <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
+                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المطالعين</h5></div>
+                        <div class="form-group col-sm-12">
+                          <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          </div>
+                          <div class="form-group col-sm-12">
+                            <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
+                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-sm-12"><h5 class="text-center pt-4 pb-4">إحصائيات المستعيرين</h5></div>
+                        <div class="form-group col-sm-6">
+                          <label for="nb-male" class="float-right">عدد التلاميذ الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد التلاميذ (الذكور)">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="nb_male" class="float-right"> عدد التلميذات (الإناث)</label>
+                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد التلميذات (الإناث)">
+                          </div>
+                          
+                        
+                      </div><!--/.row-->
+                      <hr class="hr">
+                      <div class="row">
+                        <div class="col-sm-12"><h5 class="text-center">إحصاء الوثائق المطالعة العربية</h5></div>
+                        <div class="col-sm-12">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">الأقسام المعرفية</th>
+                                <th class="text-center">000</th>
+                                <th class="text-center">100</th>
+                                <th class="text-center">200</th>
+                                <th class="text-center">300</th>
+                                <th class="text-center">400</th>
+                                <th class="text-center">500</th>
+                                <th class="text-center">600</th>
+                                <th class="text-center">700</th>
+                                <th class="text-center">800</th>
+                                <th class="text-center">900</th>
+                                <th class="text-center">ن**</th>
+                                <th class="text-center">ت**</th>
+                                <th class="text-center">ق**</th>
+                                <th class="text-center">المجموع</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="bg-secondary">&nbsp;</td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td><input type="number" class="form-control nbr" value="0"></td>
+                                <td class="text-center"><label for="" id="res1">0</label></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12"><h5 class="text-center">إحصاء الوثائق المطالعة غير العربية</h5></div>
+                        <div class="col-sm-12">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">الأقسام المعرفية</th>
+                                <th class="text-center">000</th>
+                                <th class="text-center">100</th>
+                                <th class="text-center">200</th>
+                                <th class="text-center">300</th>
+                                <th class="text-center">400</th>
+                                <th class="text-center">500</th>
+                                <th class="text-center">600</th>
+                                <th class="text-center">700</th>
+                                <th class="text-center">800</th>
+                                <th class="text-center">900</th>
+                                <th class="text-center">ن**</th>
+                                <th class="text-center">ت**</th>
+                                <th class="text-center">ق**</th>
+                                <th class="text-center">المجموع</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="bg-secondary">&nbsp;</td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td><input type="number" class="form-control nbr2" value="0"></td>
+                                <td class="text-center"><label for="" id="res2">0</label></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <button class="btn btn-primary" onclick="stepper.next()">التالي</button>
+                      </div>
+                    </div><!--/.tabpanel.content -->
+                    <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                      <div class="row">
+                        <div class="form-group col-sm-6">
+                          <label for="nb-male" class="float-right">عدد الطلبة الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد الطلبة (الذكور)">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="nb_male" class="float-right"> عدد الطالبات (الإناث)</label>
+                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد الطالبات (الإناث)">
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-sm-6">
+                          <label for="nb-male" class="float-right">عدد الإطارات و الموظفين الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد الإطارات و الموظفين الذكور">
+                          </div>
+                          <div class="form-group col-sm-6">
+                            <label for="nb_male" class="float-right"> عدد الإطارات و الموظفين الإناث</label>
+                            <input type="number" class="form-control" name="nb-male" placeholder=" عدد الإطارات و الموظفين الإناث">
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-sm-6">
+                          <label for="nb-male" class="float-right">عدد العملة و الحرفيين الذكور</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder="عدد العملة و الحرفيين الذكور">
+                        </div>
+                        <div class="form-group col-sm-6">
+                          <label for="nb_male" class="float-right"> عدد العملة و الحرفيين الإناث</label>
+                          <input type="number" class="form-control" name="nb-male" placeholder=" عدد العملة و الحرفيين الإناث">
+                        </div>
+                        <hr class=" mt-4 mb-4">
+                        <div class="row">
+                        <div class="col-sm-12"><h5 class="text-center mt-4 mb-4">إحصاء الوثائق المطالعة العربية</h5></div>
+                        <div class="col-sm-12">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">الأقسام المعرفية</th>
+                                <th class="text-center">000</th>
+                                <th class="text-center">100</th>
+                                <th class="text-center">200</th>
+                                <th class="text-center">300</th>
+                                <th class="text-center">400</th>
+                                <th class="text-center">500</th>
+                                <th class="text-center">600</th>
+                                <th class="text-center">700</th>
+                                <th class="text-center">800</th>
+                                <th class="text-center">900</th>
+                                <th class="text-center">ن**</th>
+                                <th class="text-center">ت**</th>
+                                <th class="text-center">ق**</th>
+                                <th class="text-center">المجموع</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="bg-secondary">&nbsp;</td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td><input type="number" class="form-control nbr3" value="0"></td>
+                                <td class="text-center"><label for="" id="res3">0</label></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12"><h5 class="text-center">إحصاء الوثائق المطالعة غير العربية</h5></div>
+                        <div class="col-sm-12">
+                          <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th class="text-center">الأقسام المعرفية</th>
+                                <th class="text-center">000</th>
+                                <th class="text-center">100</th>
+                                <th class="text-center">200</th>
+                                <th class="text-center">300</th>
+                                <th class="text-center">400</th>
+                                <th class="text-center">500</th>
+                                <th class="text-center">600</th>
+                                <th class="text-center">700</th>
+                                <th class="text-center">800</th>
+                                <th class="text-center">900</th>
+                                <th class="text-center">ن**</th>
+                                <th class="text-center">ت**</th>
+                                <th class="text-center">ق**</th>
+                                <th class="text-center">المجموع</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="bg-secondary">&nbsp;</td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td><input type="number" class="form-control nbr4" value="0"></td>
+                                <td class="text-center"><label for="" id="res4">0</label></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                        <div class="col-sm-12">
+                          <button class="btn btn-primary" onclick="stepper.previous()">السابق</button>
+                          <button type="submit" class="btn btn-primary">تسجيل</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              
+              <!-- /.card-body -->
+              <div class="card-footer">
+                
+              </div>
+            </div>
+      <!-- /.card -->
+      <!--./stepper-->
+          </div>
+        </div>
+        <!-- /.row (main row) -->
+      
+
+      
+    </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2023 <a href="#">إدارة المكتبات</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> Demo
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="../plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="../plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="../plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<!--<script src="../plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="../plugins/jqvmap/maps/jquery.vmap.usa.js"></script>-->
+<!-- jQuery Knob Chart -->
+<script src="../plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="../plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<!--<script src="../dist/js/demo.js"></script>-->
+<!-- AdminLTE dashboard demo (This is only for demo purposes) 
+<script src="../dist/js/pages/dashboard.js"></script>-->
+<script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<script>
+ // BS-Stepper Init
+ document.addEventListener('DOMContentLoaded', function () {
+    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+  })
+
+</script>
+<script>
+  function sumNumbers(cls,output) {
+  // Get all input elements with class "nbr"
+  const numberInputs = document.querySelectorAll("."+cls);
+    console.log("got the elements"+numberInputs);
+  // Calculate the sum of all numbers in the inputs
+  let sum = 0;
+  for (let i = 0; i < numberInputs.length; i++) {
+    const number = Number(numberInputs[i].value);
+    if (!isNaN(number)) {
+      sum += number;
+    }
+  }
+
+  // Display the sum in the element with id "res1"
+  const resultLabel = document.getElementById(""+output);
+  resultLabel.textContent = sum;
+}
+$(document).ready(function(){
+  $('.nbr').on("change",function(){
+    sumNumbers('nbr','res1');
+  });
+  $('.nbr2').on("change",function(){
+    sumNumbers('nbr2','res2');
+  });
+  $('.nbr3').on("change",function(){
+    sumNumbers('nbr3','res3');
+  });
+  $('.nbr4').on("change",function(){
+    sumNumbers('nbr4','res4');
+  });
+});
+</script>
+<script>
+  $(function () {
+      $('#inputDate').datetimepicker({
+        
+        format: 'dd/mm/yyyy',
+        defaultViewDate:'today',
+        language: 'ar'
+      });
+    });
+</script>
+</body>
+</html>
