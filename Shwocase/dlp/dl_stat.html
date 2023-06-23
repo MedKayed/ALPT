@@ -416,8 +416,24 @@
       <section class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-sm12">
-              معدلات وطنية
+            <div class="col">
+              <div class="info-box bg-primary text-center"><h6 class="text-center m-auto">معدلات وطنية</h6></div>
+            </div>
+            <div class="col">
+              <div class="info-box text-center"><h6 class="text-center m-auto info-box-number">1.5</h6><h6 class="text-center m-auto">كتاب لكل مواطن</h6></div>
+            </div>
+              <div class="col">
+                
+              <div class="info-box text-center"><h6 class="text-center m-auto info-box-number">1.7</h6><h6 class="text-center m-auto">كتاب لكل طفل </h6></div>
+            </div>
+              <div class="col">
+                
+              <div class="info-box text-center"><h6 class="text-center m-auto info-box-number">1.4</h6><h6 class="text-center m-auto">كتاب لكل شاب</h6></div>
+            </div>
+              <div class="col">
+              <div class="info-box text-center"><h6 class="text-center m-auto info-box-number">1.2</h6><h6 class="text-center m-auto">كتاب لكل كهل</h6></div>
+            </div>
+
             </div>
           </div>
           <div class="row">
@@ -1205,10 +1221,16 @@
   </script>
   <script>
     $("#map a").click(function(){
-      console.log("click");
+      
       let gov=$(this).find("path").attr('gn_name')
-      console.log($(this).find("path").attr('gn_name'));
+      
       $("#gov").html(gov);
+      $("#gov_stat").hide(function(){
+        //Query data
+        $("#gov_stat").show(200);
+      })
+    });
+    $(".lib_to_stat").click(function(){
       $("#gov_stat").hide(function(){
         //Query data
         $("#gov_stat").show(200);
