@@ -90,7 +90,10 @@ body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-w
 /*==========================================Long datatable padding-0.5rem=========================================================*/
 .table-p06 td, .table-p06 th{padding:0.6rem !important;}
 /*===============================================================================================================================*/
-
+/*=====================================================interactive map=============================================================*/
+#map{cursor:pointer;}
+#map a:hover{ fill: #f60;transition: all 300ms;}
+#map a{transition:all 300ms;}
 /*=====================================================Effects============================================================================*/
 .btn-flyUp:hover{margin-top:-10px;transition: all 200ms;}
 .btn-flyUp{transition: all 200ms;}
